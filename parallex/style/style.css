@@ -27,6 +27,12 @@ body.bgwhite .content-wrapper{
 .content-wrapper{
     color:#eee;
 }
+.upload_icon{
+	float: right;
+}
+.sub_heading{
+	font-size: 18px;
+}
 p{ margin-bottom:8px;
 }
 h1{
@@ -402,10 +408,6 @@ content: "";
     color:#fff;
 }
 
-
-
-
-
 @media (max-width: 767px) {
 
     section.mcon-mainmenu{
@@ -475,11 +477,11 @@ section.mcon-feature-red {
 
 section.mcon-features {
     display: block;
-    background-color: #454747;
+    background-color: #eee;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 25px 0;
-    color: #fafafa;
+    color: #777;
     position: relative;
 
 }
@@ -487,15 +489,15 @@ section.mcon-features {
 section.mcon-features h4 {
     text-align: center;
     margin: 15px auto 10px;
-
     font-size: 14px;
     font-size: 1.2rem;
-    color: #fefefe;
     font-weight: 300;
     font-family: 'Open Sans', Verdana, sans-serif;
 }
 
-
+.conten_box{
+	background: #fff;
+}
 
 
 .item-meta {

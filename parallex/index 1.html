@@ -1,0 +1,166 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>DZS Parallaxer - create awesome Parallax blocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link href="./bootstrap/bootstrap.css" rel="stylesheet">
+<link rel='stylesheet' type="text/css" href="https://raw.github.com/srinivasan01/parallaxer/master/parallex/style/style.css"/>
+    <!--<link rel='stylesheet' type="text/css" href="style/style.css"/>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type="text/css" href="dzsscroller/scroller.css"/>
+    <link rel='stylesheet' type="text/css" href="dzsparallaxer/dzsparallaxer.css"/>
+</head>
+<body>
+
+<div class="mwrap-wrapper">
+
+<!--<div class="dzsparallaxer auto-init" data-options='{ direction: "reverse"}' style="height: 350px;">
+
+    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(img/imgbig6.jpg)">
+    </div>
+    <div class="big-text center-it">
+        "Use Parallaxer for creating super smooth effects in your website."
+        <br><span class="smaller color-highlight">John Doe</span>
+    </div>
+</div>-->
+<!--<div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">-->
+
+    <!--<div class="dzsparallaxer--target " style="width: 100%; height: 600px; background-image: url(img/imgbig1.jpg)">-->
+        <!--<iframe src="//player.vimeo.com/video/22884674?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&autoplay=1" width="100%" height="655" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<div class="container-fluid no-margin">
+
+    <div class="row">
+        <!--<div class="col-md-6">
+
+            <div class="dzsparallaxer auto-init" data-options='{   direction: "normal"}' style="height: 250px;">
+
+                <div class="divimage dzsparallaxer--target " style="width: 100%; height: 624px; background-image: url(img/imgbig5.jpg)">
+                </div>
+                <div class="big-text">Direction: Normal</div>
+            </div>
+        </div>-->
+        <div class="col-md-12">
+            <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 250px;">
+
+                <div class="divimage dzsparallaxer--target " style="width: 100%; height: 624px; background-image: url(img/images.jpg)">
+                </div>
+                <div class="big-text"><div>Direction: Reverse </div>
+				<span class="sub_heading">Shawn</span>
+				<span class="upload_icon">
+				<span id="browse_popup"><a href="#"><img src="img/browse.png" width="40px"></a></span>
+				<span id="upload_popup"><a href="#"><img src="img/uploadicon.png" width="40px"></a></span>
+				</span>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="mcon-features">
+
+    <div class="pat-bg">
+        <div class="pat-bg-inner">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 conten_box">
+                <div class="bigfeature"></div>
+                <h4>Easy Install</h4>
+                <p style="text-align: center">Install DZS ZoomPlayer in just a couple of minutes. <a href="http://digitalzoomstudio.net/docs/parallaxer/" target="_blank">Docs</a> are also there.</p>
+            </div>
+            <div class="col-md-3 conten_box">
+                <div class="bigfeature"></div>
+                <h4>Responsive</h4>
+                <p style="text-align: center">From mobile to HD, DZS ZoomPlayer are ultra responsive. Also has retina graphics.</p>
+            </div>
+            <div class="col-md-3 conten_box">
+                <div class="bigfeature"></div>
+                <h4>Customizable</h4>
+                <p style="text-align: center">Customize DZS ZoomPlayer with the many options included.</p>
+            </div>
+            <div class="col-md-3 conten_box">
+                <div class="bigfeature"></i></div>
+                <h4>SEO Friendly</h4>
+                <p style="text-align: center">Built with SEO in mind, DZS ZoomPlayer parses html content into working magic.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<script>
+    jQuery(document).ready(function($){
+//        console.info(get_query_arg(window.location.href, 'disable_scrollbar'))
+        if(get_query_arg(window.location.href, 'disable_scrollbar')!=='on'){
+            window.dzsscr_init($('.mwrap-wrapper'),{
+                'type':'scrollTop'
+                ,'settings_skin':'skin_apple'
+                ,enable_easing: 'on'
+                ,settings_autoresizescrollbar: 'on'
+                ,settings_chrome_multiplier : 0.04
+            })
+        }
+
+    });
+
+	jQuery('#browse_popup,#upload_popup').on('click',function(){
+		alert('test');
+	});
+
+    function get_query_arg(purl, key){
+//        console.log(purl, key)
+        if(purl.indexOf(key+'=')>-1){
+            //faconsole.log('testtt');
+            var regexS = "[?&]"+key + "=.+";
+            var regex = new RegExp(regexS);
+            var regtest = regex.exec(purl);
+
+
+            if(regtest != null){
+                var splitterS = regtest[0];
+                if(splitterS.indexOf('&')>-1){
+                    var aux = splitterS.split('&');
+                    splitterS = aux[1];
+                }
+                var splitter = splitterS.split('=');
+
+                return splitter[1];
+
+            }
+            //$('.zoombox').eq
+        }
+    }
+
+</script>
+
+<link rel='stylesheet' type="text/css" href="fontawesome/font-awesome.min.css"/>
+<link rel='stylesheet' type="text/css" href="advancedscroller/plugin.css"/>
+<script src="advancedscroller/plugin.js" type="text/javascript"></script>
+<script src="dzsparallaxer/dzsparallaxer.js" type="text/javascript"></script>
+<script src="dzsscroller/scroller.js" type="text/javascript"></script>
+<!--<script src="dzslayouter/jquery.masonry.js" type="text/javascript"></script>-->
+<!--<script src="dzslayouter/jquery.masonry.ordered.js" type="text/javascript"></script>-->
+</body>
+</html>

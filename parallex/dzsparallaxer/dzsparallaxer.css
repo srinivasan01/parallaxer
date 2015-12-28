@@ -64,8 +64,8 @@
   .dzsparallaxer .big-text {
     position: absolute;
     text-align: center;
-    width: 80%;
-    left: 10%;
+    width: 95%;
+    left: 2%;
     font-size: 40px;
     font-weight: 300;
     top: 70px;
@@ -73,7 +73,8 @@
     line-height: 1.5;
     font-style: italic;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    opacity: 0.7; }
+	float:left;
+	text-align: left;}
     .dzsparallaxer .big-text .smaller {
       font-size: 60%; }
   .dzsparallaxer .center-it {
